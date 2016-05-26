@@ -8,7 +8,7 @@ The instructions and images go through using and setting up both the stackoverfl
 ##### An example slack bot output (with a link to the preset query):
 ![alt tag](https://github.com/franklsm1/SO_DW_slackBot/blob/master/SODWexample.PNG)
 
-# Slack Channel Bot Import and Setup
+# Slack Bot Import and Setup
 ##### 1.) Copy the contents of the slackBot.json file into your Node-RED editor using the import clipboard feature.
 
 ![alt tag](https://github.com/franklsm1/SO_DW_slackBot/blob/master/import.PNG)

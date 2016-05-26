@@ -5,7 +5,7 @@ The bot will make a post in the specified channel whenever a new question has be
 ##### Something To Note:
 The instructions and images go through using and setting up both the stackoverflow and developer works bot, but you can remove the wire connecting the "Slack Response" node to either half of the application and then only the connecting part will be operational. This gives you the ability to use either the stackoverflow query or the developer works query as opposed to both.
 
-##### An example slack bot output (with a link to the searched query):
+##### An example slack bot output (with a link to the preset query):
 ![alt tag](https://github.com/franklsm1/SO_DW_slackBot/blob/master/SODWexample.PNG)
 
 # Slack Channel Bot Import and Setup

@@ -1,4 +1,4 @@
-# Stackoverflow and Developer Works search query slack bot
+# Stackoverflow and Developer Works slack bot
 ### A Slack bot built with Node-RED on IBM Bluemix
 The bot will make a post in the specified channel whenever a new question has been asked pertaining to the preset query in the Node-RED application. 
 

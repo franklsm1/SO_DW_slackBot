@@ -1,6 +1,8 @@
 # Stackoverflow and Developer Works Slack Bot
 ### A Slack bot built with Node-RED on IBM Bluemix
-The bot will make a post in the specified channel whenever a new question has been asked pertaining to the preset query in the Node-RED application. 
+The bot will make a post in the specified channel whenever a new question has been asked pertaining to any query that can be set in the Node-RED application. 
+
+Example query URL: http://stackoverflow.com/search?q=time
 
 ##### Something To Note:
 The instructions and images go through using and setting up both the stackoverflow and developer works bots, but you can remove the wire connecting the "Slack Response" node to either half of the application and then only the connecting part will remain operational. This gives you the ability to use either the stackoverflow query or the developer works query as opposed to both.

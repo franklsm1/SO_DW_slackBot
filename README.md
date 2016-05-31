@@ -4,7 +4,9 @@ This bot will make a post in the chosen channel whenever a new question has been
 
 This README will walk you through setting up this slack bot for your own personal slack channel.
 
-Example query URL: http://stackoverflow.com/search?q=time
+Example query URLs:
+http://stackoverflow.com/search?q=time
+https://developer.ibm.com/answers/search.html?f=&type=question&redirect=search%2Fsearch&sort=newest&q=java
 
 ##### Something To Note:
 The instructions and images go through using and setting up both the stackoverflow and developer works bots, but you can remove the wire connecting the "Slack Response" node to either half of the application and then only the connecting part will remain operational. This gives you the ability to use either the stackoverflow query or the developer works query as opposed to both.

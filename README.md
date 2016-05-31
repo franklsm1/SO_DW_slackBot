@@ -4,7 +4,7 @@ This bot will make a post in the chosen channel whenever a new question has been
 
 This README will walk you through setting up this slack bot for your own personal slack channel.
 
-###### Example query URLs:
+##### Example query URLs:
 Stackoverflow: http://stackoverflow.com/search?q=time
 
 Developer Works Answers: https://developer.ibm.com/answers/search.html?q=java

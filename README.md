@@ -39,7 +39,7 @@ The instructions and images go through using and setting up both the stackoverfl
     "count": 0
   }
 
-  Property 2:
+  Property 2:  
   {
     "_id": "DWCount",
     "count": 0

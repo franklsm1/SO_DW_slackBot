@@ -33,13 +33,13 @@ The instructions and images go through using and setting up both the stackoverfl
 ##### 3.) Next you will need to create two new documents inside your cloudant DB:
   To create these documents you will need to click on the Cloudant NoSQL DB service from your bluemix dashboard.  Once clicked you will see a page that explains about your Cloudant NoSQL DB and it will contain a button that says LAUNCH. Click that button. A new tab will not open with options for your Cloudant NoSQL DB. Click on the "nodered" database name that is, created by default as part of the boiler plate creation. Next click the plus symbol at the end of the "All Documents" tab, followed by clicking the "New Doc" tab that will appear. Then paste the following properties into the document and click the "Create Document" button. These steps will need to be done twice, once for each property.
   
-  Property 1:  
+######  Property 1:  
   {
     "_id": "SOCount",
     "count": 0
   }
 
-  Property 2:  
+######  Property 2:  
   {
     "_id": "DWCount",
     "count": 0

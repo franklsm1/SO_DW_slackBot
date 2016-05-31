@@ -6,7 +6,8 @@ This README will walk you through setting up this slack bot for your own persona
 
 ###### Example query URLs:
 Stackoverflow: http://stackoverflow.com/search?q=time
-Developer Works Answers: https://developer.ibm.com/answers/search.html?f=&type=question&redirect=search%2Fsearch&sort=newest&q=java
+
+Developer Works Answers: https://developer.ibm.com/answers/search.html?q=java
 
 ##### Something To Note:
 The instructions and images go through using and setting up both the stackoverflow and developer works bots, but you can remove the wire connecting the "Slack Response" node to either half of the application and then only the connecting part will remain operational. This gives you the ability to use either the stackoverflow query or the developer works query as opposed to both.

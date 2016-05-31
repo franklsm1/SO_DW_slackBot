@@ -1,6 +1,6 @@
 # Stackoverflow and Developer Works Slack Bot
 ### A Slack bot built with Node-RED on IBM Bluemix
-This bot will make a post in the chosen channel whenever a new question has been asked on the preset query for stackoverflow or developer works. The bot searches using a URL that is set in the Node-RED application. It compares the number of questions count stored in a database to the current number of questions from the search query and if there is an increase in the question count a message is posted. In the example provided for this guide, it queries the URL on 15 minutes intervals but this value can be changed from anywhere to 1 second to every 1000 hours.
+This bot will make a post in the chosen channel whenever a new question has been asked on the preset query for stackoverflow or developer works answers. The bot searches using a URL that is set in the Node-RED application. It compares the number of questions value stored in a database to the current number of questions from the search query and if there is an increase in the question count a message is posted. In the example provided for this guide, it queries the URL on 15 minutes intervals but this value can be changed from anywhere to 1 second to every 1000 hours.
 
 This README will walk you through setting up this slack bot for your own personal slack channel.
 

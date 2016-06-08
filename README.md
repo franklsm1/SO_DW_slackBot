@@ -25,7 +25,9 @@ The instructions and images go through using and setting up both the stackoverfl
 ![alt tag](https://github.com/franklsm1/SO_DW_slackBot/blob/master/DWSOflow.PNG)
 
 ##### 2.) Next you will need to update 3 nodes (4 more extra nodes if not using the Node-Red boilerplate).
-  -For both the "SO search URL" and the "DW search URL" nodes you will need to replace the stackoverflow and developer works queries in the url variable. An example url is included in each node already.
+  -For the and the "DW search URL" nodes you will need to replace the developer works query in the url variable. An example url is included in the node already.
+  
+  -For the "SO search URL" you will need to update the query variable with the stackoverflow query you desire.  The way this node is set up, the query is everything after and including the "q=" in the URL or your stack overflow search.  For example, with the URL, http://stackoverflow.com/search?q=time, the query variable would look like this: var query = "q=time";
   
   -For the "Slack Response" node you will need to enable incoming webhooks for your slack team if you have not done so already, https://my.slack.com/services/new/incoming-webhook/. Then you will need to replace the text of the URL field with the Webhook URL that was created for you.
   

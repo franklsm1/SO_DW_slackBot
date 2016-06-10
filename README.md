@@ -15,14 +15,14 @@ The instructions and images go through using and setting up both the stackoverfl
 ##### An example slack bot output (with a link to the preset query):
 ![alt tag](https://github.com/franklsm1/SO_DW_slackBot/blob/master/SODWexample.PNG)
 
-## Slack Bot Import and Setup
-##### UPDATE:
+#### UPDATE to note before performing import and setup:
 For the Stackoverflow bot, the source code has been updated to use the actual stackoverflow API to prevent hitting human verification errors. This means that you will have to update the settings.js (for non bluemix node-RED apps) or bluemix-settings.js file to accomadate the change.  You will need to change the functionGlobalContext section to include the zlib library, similar to below. Then rebuild and deploy your application. This link, https://hub.jazz.net/tutorials/jazzeditor/, will walk you through how to update a file and redeploy your application after a change.
 
 functionGlobalContext: { zlib: require('zlib') }
 
 You can use the oldSlackBot.json file for your import if you do not want to change this setting, but be warned that you may hit a human verification error when querying stackoverflow after using the application for a while.
 
+## Slack Bot Import and Setup
 ##### 1.) Copy the contents of the slackBot.json file into your Node-RED editor using the import clipboard feature.
 
 ![alt tag](https://github.com/franklsm1/SO_DW_slackBot/blob/master/import.PNG)

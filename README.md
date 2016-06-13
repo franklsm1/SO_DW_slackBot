@@ -15,7 +15,7 @@ __Important Note:__ The instructions and images go through using and setting up 
 ![alt tag](https://github.com/franklsm1/SO_DW_slackBot/blob/master/SODWexample.PNG)
 
 #### UPDATE to note before performing import and setup:
-For the Stackoverflow bot, the source code has been updated to use the actual stackoverflow API to prevent hitting human verification errors. This means that you will have to update the __bluemix-settings.js__ or __settings.js__ (for non bluemix node-RED apps) file to accomadate the change.  You will need to change the functionGlobalContext section to include the zlib library. An example is shown below that that section will now look like. Then you will need to rebuild and redeploy your application. This link, https://hub.jazz.net/tutorials/jazzeditor/, will walk you through how to update a file and redeploy your application after a change.
+For the Stackoverflow bot, the source code has been updated to use the actual stackoverflow API to prevent hitting human verification errors. This means that you will have to update the __bluemix-settings.js__ or the __settings.js__ (for non bluemix node-RED apps) file to accomadate the change.  You will need to change the functionGlobalContext section to include the zlib library. An example is shown below that that section will now look like. Then you will need to rebuild and redeploy your application. This link, https://hub.jazz.net/tutorials/jazzeditor/, will walk you through how to update a file and redeploy your application after a change.
 
 ```javascript
 functionGlobalContext: { zlib: require('zlib') }

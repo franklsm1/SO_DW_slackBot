@@ -35,7 +35,7 @@ __Note:__ You can use the __oldSlackBot.json__ file for your import if you do no
 ##### 2.) Next you will need to update 3 nodes (7 nodes if not using the Node-Red boilerplate).
   -For the "DW search URL" node you will need to replace the developer works query in the url variable. An example url is included in the node already.
   
-  -For the "SO search URL" you will need to update the query variable with the stackoverflow query you desire.  The way this node is set up, the query is everything after and including the "q=" in the URL or your stack overflow search.  For example, with the URL, http://stackoverflow.com/search?q=time, the query variable would look like this: var query = "q=time";
+  -For the "SO search URL" you will need to update the query variable with the stackoverflow query you desire.  The way this node is set up, the query is everything after and including the "q=" in the URL or your stack overflow search.  For example, with the URL, http://stackoverflow.com/search?q=time, the query variable would look like: var query = "q=time";
   
   -For the "Slack Response" node you will need to enable incoming webhooks for your slack team if you have not done so already, https://my.slack.com/services/new/incoming-webhook/. Then you will need to replace the text of the URL field with the Webhook URL that was created for you.
   

@@ -32,7 +32,7 @@ __Note:__ You can use the __oldSlackBot.json__ file for your import if you do no
 ##### After importing your flow should look similar to this:
 ![alt tag](https://github.com/franklsm1/SO_DW_slackBot/blob/master/DWSOflow.PNG)
 
-##### 2.) Next you will need to update 3 nodes (4 more extra nodes if not using the Node-Red boilerplate).
+##### 2.) Next you will need to update 3 nodes (7 nodes if not using the Node-Red boilerplate).
   -For the "DW search URL" node you will need to replace the developer works query in the url variable. An example url is included in the node already.
   
   -For the "SO search URL" you will need to update the query variable with the stackoverflow query you desire.  The way this node is set up, the query is everything after and including the "q=" in the URL or your stack overflow search.  For example, with the URL, http://stackoverflow.com/search?q=time, the query variable would look like this: var query = "q=time";

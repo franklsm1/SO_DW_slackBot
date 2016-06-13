@@ -9,18 +9,19 @@ Stackoverflow: http://stackoverflow.com/search?q=time
 
 Developer Works Answers: https://developer.ibm.com/answers/search.html?q=java
 
-##### Something To Note:
-The instructions and images go through using and setting up both the stackoverflow and developer works bots, but you can remove the wire connecting the "Slack Response" node to either half of the application and then only the connecting part will remain operational. This gives you the ability to use either the stackoverflow query or the developer works query as opposed to both.
+__Important Note:__ The instructions and images go through using and setting up both the stackoverflow and developer works bots, but you can remove the wire connecting the "Slack Response" node to either half of the application and then only the connecting part will remain operational. This gives you the ability to use either the stackoverflow query or the developer works query as opposed to both. You can also copy either section and repaste the nodes to set up two separate queries for either site.
 
 ##### An example slack bot output (with a link to the preset query):
 ![alt tag](https://github.com/franklsm1/SO_DW_slackBot/blob/master/SODWexample.PNG)
 
 #### UPDATE to note before performing import and setup:
-For the Stackoverflow bot, the source code has been updated to use the actual stackoverflow API to prevent hitting human verification errors. This means that you will have to update the settings.js (for non bluemix node-RED apps) or bluemix-settings.js file to accomadate the change.  You will need to change the functionGlobalContext section to include the zlib library, similar to below. Then rebuild and deploy your application. This link, https://hub.jazz.net/tutorials/jazzeditor/, will walk you through how to update a file and redeploy your application after a change.
+For the Stackoverflow bot, the source code has been updated to use the actual stackoverflow API to prevent hitting human verification errors. This means that you will have to update the __bluemix-settings.js__ or __settings.js__ (for non bluemix node-RED apps) file to accomadate the change.  You will need to change the functionGlobalContext section to include the zlib library. An example is shown below that that section will now look like. Then you will need to rebuild and redeploy your application. This link, https://hub.jazz.net/tutorials/jazzeditor/, will walk you through how to update a file and redeploy your application after a change.
 
+```javascript
 functionGlobalContext: { zlib: require('zlib') }
+```
 
-You can use the oldSlackBot.json file for your import if you do not want to change this setting, but be warned that you may hit a human verification error when querying stackoverflow after using the application for a while.
+__Note:__ You can use the __oldSlackBot.json__ file for your import if you do not want to change this setting, but be warned that you may hit a human verification error when querying stackoverflow after using the application for a while.
 
 ## Slack Bot Import and Setup
 ##### 1.) Copy the contents of the slackBot.json file into your Node-RED editor using the import clipboard feature.
